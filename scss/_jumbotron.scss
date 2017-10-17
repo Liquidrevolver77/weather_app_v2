@@ -1,0 +1,35 @@
+
+.jumbotron {
+  padding: $jumbotron-padding ($jumbotron-padding / 2);
+  margin-bottom: $jumbotron-padding;
+  background-color: $jumbotron-bg;
+  
+        border: none;
+       // BootCats
+  
+        border-width: 2px 0px 0px 0px;
+       // BootCats
+  @include border-radius($border-radius-lg);
+   // BootCats
+  color: $jumbotron-color; // BootCats
+
+  @include media-breakpoint-up(sm) {
+    padding: ($jumbotron-padding * 2) $jumbotron-padding;
+  }
+
+  // BootCats
+  h1, h2, h3, h4, h5, h6,
+  .h1, .h2, .h3, .h4, .h5, .h6 {
+    color: $jumbotron-color !important;
+  }
+}
+
+.jumbotron-hr {
+  border-top-color: darken($jumbotron-bg, 10%);
+}
+
+.jumbotron-fluid {
+  padding-right: 0;
+  padding-left: 0;
+  @include border-radius(0);
+}
